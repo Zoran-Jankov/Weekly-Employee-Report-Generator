@@ -1,4 +1,9 @@
 # Weekly-Employee-Report-Generator
+
+[![made-with-powershell](https://img.shields.io/badge/PowerShell-1f425f?logo=Powershell)](https://microsoft.com/PowerShell)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8aecaaa6649542bda52523066e0fe775)](https://www.codacy.com/gh/Zoran-Jankov/Weekly-Employee-Report-Generator/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Zoran-Jankov/Weekly-Employee-Report-Generator&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/zoran-jankov/weekly-employee-report-generator/badge)](https://www.codefactor.io/repository/github/zoran-jankov/weekly-employee-report-generator)
  
 ## Credits
 

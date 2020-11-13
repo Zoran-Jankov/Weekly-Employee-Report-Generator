@@ -48,10 +48,12 @@ if (-not (Test-Path -Path $ReportFullName)) {
     $Saturday = "Subota"
     $Sunday = "Nedelja"
 
+    $Employee = "> Zoran Jankov - Administrator sistema i računarskih mreža"
+
     $Separator = "`n`n------`n`n"
     $WorkingHours = "`n------`n`n### 07:30-08:30`n`n- `n`n### 08:30-09:30`n`n- `n`n### 09:30-10:30`n`n- `n`n### 10:30-11:30`n`n- `n### 11:30-12:30`n`n- `n`n### 12:30-13:30`n`n- `n`n### 13:30-14:30`n`n- `n`n### 14:30-15:30`n`n- "
     
-    $ReportBody = "# $ReportTitle"
+    $ReportBody = "# $ReportTitle`n$Employee"
     $ReportBody += "$Separator## $Monday $MondayDate`n$WorkingHours"
     $ReportBody += "$Separator## $Tuesday $TuesdayDate`n$WorkingHours"
     $ReportBody += "$Separator## $Wednesday $WednesdayDate`n$WorkingHours"

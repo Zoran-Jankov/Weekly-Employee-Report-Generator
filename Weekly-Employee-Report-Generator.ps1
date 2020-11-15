@@ -25,7 +25,7 @@ switch ($Date.DayOfWeek) {
     }
 }
 
-$MondayDate =$Date.AddDays($DayDecrement).ToString("dd.MM.yyyy.")
+$MondayDate = $Date.AddDays($DayDecrement).ToString("dd.MM.yyyy.")
 $TuesdayDate = $Date.AddDays($DayDecrement + 1).ToString("dd.MM.yyyy.")
 $WednesdayDate = $Date.AddDays($DayDecrement + 2).ToString("dd.MM.yyyy.")
 $ThursdayDate = $Date.AddDays($DayDecrement + 3).ToString("dd.MM.yyyy.")
@@ -33,9 +33,11 @@ $FridayDate = $Date.AddDays($DayDecrement + 4).ToString("dd.MM.yyyy.")
 $SaturdayDate = $Date.AddDays($DayDecrement + 5).ToString("dd.MM.yyyy.")
 $SundayDate = $Date.AddDays($DayDecrement + 6).ToString("dd.MM.yyyy.")
 
-$ReportTitle = "Nedeljni izveštaj za period $MondayDate - $SundayDate"
+$Settings = Get-Content -Path "$PSScriptRoot\Settings.cfg" | ConvertFrom-StringData
+
+$ReportTitle = $Settings.ReportTitle + "$MondayDate - $SundayDate"
 $Documents = [environment]::getfolderpath("mydocuments")
-$ReportFolderName = "Nedeljni izveštaji"
+$ReportFolderName = $Settings.ReortFolderName
 $ReportFullName = "$Documents\$ReportFolderName\$ReportTitle" + "md"
 
 if (-not (Test-Path -Path $ReportFullName)) {

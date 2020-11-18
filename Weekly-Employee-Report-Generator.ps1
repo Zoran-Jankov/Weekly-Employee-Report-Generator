@@ -37,13 +37,13 @@ $ReportFullName = "$Documents\$ReportFolderName\$ReportTitle" + "md"
 if (-not (Test-Path -Path $ReportFullName)) {
     #Defining names of the days in Serbian language
     $DaysOfWeek = @(
-        'Ponedeljak'
-        'Utorak'
-        'Sreda'
-        'Četvratak'
-        'Petak'
-        'Subota'
-        'Nedelja'
+        $Settings.MondayName
+        $Settings.TuesdayName
+        $Settings.WednesdayName
+        $Settings.ThursdayName
+        $Settings.FridayName
+        $Settings.SaturdayName
+        $Settings.SundayName
     )
 
     $Employee = "> " + $Settings.EmployeeName + " - " + $Settings.EmployeeTitle

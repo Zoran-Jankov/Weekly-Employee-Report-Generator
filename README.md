@@ -5,7 +5,11 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8aecaaa6649542bda52523066e0fe775)](https://www.codacy.com/gh/Zoran-Jankov/Weekly-Employee-Report-Generator/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Zoran-Jankov/Weekly-Employee-Report-Generator&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/zoran-jankov/weekly-employee-report-generator/badge)](https://www.codefactor.io/repository/github/zoran-jankov/weekly-employee-report-generator)
 [![Github All Releases](https://img.shields.io/github/downloads/Zoran-Jankov/Weekly-Employee-Report-Generator/total.svg)]()
- 
+
+## Description
+
+This script is used for generating a Markdown template file for weekly employee reports. In **`Settings.cfg`** file you can define the name and title of the employee, report title and report folder name, starting hour and working time, and the names of the days of the week, to cover all the languages. When you run the script it will first try to find existing file for current week and open it in the the default Markdown editor, and if it does not exist it will create one for current week, and then it will open newly created file.
+
 ## Credits
 
 ### Author

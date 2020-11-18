@@ -29,13 +29,12 @@ $MondayDate = $Date.AddDays($DayDecrement).ToString("dd.MM.yyyy.")
 $SundayDate = $Date.AddDays($DayDecrement + 6).ToString("dd.MM.yyyy.")
 $Settings = Get-Content -Path "$PSScriptRoot\Settings.cfg" | ConvertFrom-StringData
 
-$ReportTitle = $Settings.ReportTitle + "$MondayDate - $SundayDate"
+$ReportTitle = $Settings.ReportTitle + " $MondayDate - $SundayDate"
 $Documents = [environment]::getfolderpath("mydocuments")
 $ReportFolderName = $Settings.ReortFolderName
 $ReportFullName = "$Documents\$ReportFolderName\$ReportTitle" + "md"
 
 if (-not (Test-Path -Path $ReportFullName)) {
-    #Defining names of the days in Serbian language
     $DaysOfWeek = @(
         $Settings.MondayName
         $Settings.TuesdayName

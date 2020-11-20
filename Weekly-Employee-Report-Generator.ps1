@@ -27,7 +27,6 @@ switch ($Date.DayOfWeek) {
 }
 $MondayDate = $Date.AddDays($DayDecrement).ToString("dd.MM.yyyy.")
 $SundayDate = $Date.AddDays($DayDecrement + 6).ToString("dd.MM.yyyy.")
-$Settings = Get-Content -Path "$PSScriptRoot\Settings.cfg" | ConvertFrom-StringData
 
 $ReportTitle = $Settings.ReportTitle + " $MondayDate - $SundayDate"
 $Documents = [environment]::getfolderpath("mydocuments")

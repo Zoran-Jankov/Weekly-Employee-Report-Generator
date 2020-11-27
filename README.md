@@ -20,4 +20,4 @@ Script developer:  [Zoran Jankov](https://www.linkedin.com/in/zoran-jankov-b1054
 
 ### Icon creator
 
-Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icon made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

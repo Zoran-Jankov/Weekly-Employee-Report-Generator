@@ -8,7 +8,7 @@
 
 ## Description
 
-This script is used for generating a Markdown template file for weekly employee reports. In [**`Settings.cfg`**](https://github.com/Zoran-Jankov/Weekly-Employee-Report-Generator/blob/main/Settings.cfg) file you can define the name and title of the employee, report title and report folder name, starting hour and working time, and the names of the days of the week, to cover all the languages. When you run the script it will first try to find existing file for current week and open it in the the default Markdown editor, and if it does not exist it will create one for current week, and then it will open newly created file.
+This script is used for generating a Markdown template file for weekly employee reports. In [`Settings.cfg`](https://github.com/Zoran-Jankov/Weekly-Employee-Report-Generator/blob/main/Settings.cfg) file you can define the name and title of the employee, report title and report folder name, starting hour and working time, and the names of the days of the week, to cover all the languages. When you run the script it will first try to find existing file for current week and open it in the the default Markdown editor, and if it does not exist it will create one for current week, and then it will open newly created file.
 
 ## Credits
 
